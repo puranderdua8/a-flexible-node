@@ -1,4 +1,4 @@
-// llmNode.js
+// dropdownNode.js
 import { useState } from "react";
 import { Node } from "../components/Node";
 import { FormItem } from "../components/FormItem";
@@ -28,7 +28,9 @@ export const DropdownNode = ({ id, data }) => {
       <FormItem label="Select one:">
         <Select value={value} onChange={handleChange}>
           {options.map((option) => (
-            <option value={option.value}>{option.label}</option>
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
           ))}
         </Select>
       </FormItem>

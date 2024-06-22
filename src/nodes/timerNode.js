@@ -1,4 +1,4 @@
-// llmNode.js
+// timerNode.js
 import { useState, useEffect } from "react";
 import { Node } from "../components/Node";
 import { Position } from "reactflow";

@@ -1,4 +1,4 @@
-// inputNode.js
+// outputNode.js
 import { NodeWithType } from "../components/NodeWithType";
 import { Position } from "reactflow";
 

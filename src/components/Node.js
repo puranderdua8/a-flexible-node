@@ -15,7 +15,7 @@ export const Node = ({
       <p>{label}</p>
       {children}
       {handles.map((handle) => (
-        <Handle {...handle} />
+        <Handle key={handle.id} {...handle} />
       ))}
     </div>
   );

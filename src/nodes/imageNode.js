@@ -1,4 +1,4 @@
-// llmNode.js
+// imageNode.js
 import { Node } from "../components/Node";
 import { Position } from "reactflow";
 

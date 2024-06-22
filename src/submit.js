@@ -6,7 +6,6 @@ export const SubmitButton = () => {
   const { nodes, edges } = useStore(selector, shallow);
 
   const submitPipeline = async (nodes, edges) => {
-    console.log(nodes, edges);
     try {
       const response = await fetch("http://localhost:8000/pipelines/parse", {
         method: "POST",
@@ -16,7 +15,6 @@ export const SubmitButton = () => {
         },
         body: JSON.stringify({ nodes, edges }),
       });
-      console.log(response);
       alert(
         `Nodes: ${response.num_nodes}, Edges: ${response.num_edges}, Is DAG: ${response.is_dag}`
       );

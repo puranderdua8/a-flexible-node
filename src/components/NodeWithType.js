@@ -34,7 +34,9 @@ export const NodeWithType = ({
       <FormItem label="Type:">
         <Select value={type} onChange={handleTypeChange}>
           {types.map((type) => (
-            <option value={type.value}>{type.label}</option>
+            <option key={type.value} value={type.value}>
+              {type.label}
+            </option>
           ))}
         </Select>
       </FormItem>
